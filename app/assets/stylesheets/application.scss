@@ -1,2 +1,31 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.jumbotron {
+    padding-top: 0px;
+    // 背景画像を暗くする
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05) ), url(person-845325_1920.jpg);
+	background-size: cover;
+	// 背景画像の位置を決める
+	background-position: 50% 50%;
+	height: 420px;
+}
+
+.navbar-default {
+    background: transparent;
+    border-color: transparent;
+    z-index: 10;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 13px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
