@@ -16,5 +16,8 @@
 !/log/.keep
 /tmp
 
-#Ignore rbenv setting file.
+# Ignore rbenv setting file.
 .ruby-version
+
+# Ignore environment variable setting file.
+.env
