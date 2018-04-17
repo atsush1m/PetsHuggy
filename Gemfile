@@ -13,7 +13,7 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'devise'
 gem 'toastr-rails'
 gem 'omniauth-facebook'
-
+gem 'dotenv-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
