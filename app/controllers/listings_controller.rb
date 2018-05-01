@@ -27,6 +27,7 @@ class ListingsController < ApplicationController
   end
 
   def basics
+    @listing = Listing.find(params[:id])
   end
 
   private
