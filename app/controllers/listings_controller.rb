@@ -14,7 +14,7 @@ class ListingsController < ApplicationController
     @listing = current_user.listings.build(listing_params)
 
     if @listing.save
-      redirect_to edit_listing_path(@listing), notice: "リスティングを作成・保存をしました"
+      redirect_to manage_listing_basics_path(@listing), notice: "リスティングを作成・保存をしました"
     else
       redirect_to new_listing_path(@listing), notice: "リスティングを作成・保存できませんでした"
     end
@@ -24,6 +24,9 @@ class ListingsController < ApplicationController
   end
 
   def update
+  end
+
+  def basics
   end
 
   private
