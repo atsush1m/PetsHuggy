@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   get 'manage-listing/:id/photos' => 'listings#photos', as: 'manage_listing_photos'
   get 'manage-listing/:id/calendar' => 'listings#calendar', as: 'manage_listing_calendar'
   get 'manage-listing/:id/bankaccount' => 'listings#bankaccount', as: 'manage_listing_bankaccount'
+  get 'manage-listing/:id/publish' => 'listings#publish', as: 'manage_listing_publish'
 end
