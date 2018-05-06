@@ -30,6 +30,10 @@ class ListingsController < ApplicationController
     @listing = Listing.find(params[:id])
   end
 
+  def description
+    @listing = Listing.find(params[:id])
+  end
+
   private
   def listing_params
     params.require(:listing).permit(:home_type, :pet_type, :breeding_years, :pet_size)
