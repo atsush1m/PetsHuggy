@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180507214508) do
+ActiveRecord::Schema.define(version: 20180507215144) do
 
   create_table "listings", force: :cascade do |t|
     t.string   "home_type"
@@ -32,8 +32,12 @@ ActiveRecord::Schema.define(version: 20180507214508) do
 
   create_table "photos", force: :cascade do |t|
     t.integer  "listing_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   add_index "photos", ["listing_id"], name: "index_photos_on_listing_id"
